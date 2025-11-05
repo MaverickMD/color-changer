@@ -38,4 +38,9 @@ class Color {
   static randomize(){ /* upgraded from func. specific to Color class */
     return Math.floor(Math.random()*256);
   }
+
+  get rgbValue(){
+    return `rgb(${this.r},${this.g},${this.b})`
+  }
 }
+
