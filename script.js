@@ -41,12 +41,13 @@ class Color {
   }
 
   get rgbValue(){
-    return `rgb(${this.r},${this.g},${this.b})`
+    return `RGB(${this.r},${this.g},${this.b})`
   }
 }
 eCOLOR_CHANGE_BTN.addEventListener('click', ()=>{
 const color = new Color();
 eBG.style.backgroundColor = color.rgbValue;
+eRGB_DISPLAY.innerHTML = color.rgbValue;
 })
 
 
