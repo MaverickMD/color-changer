@@ -29,3 +29,13 @@ eCOLOR_CHANGE_BTN.addEventListener('click', ()=>{
 */
 
 /* Color = Class */
+class Color {
+  constructor(){
+    this.r = Color.randomize();
+    this.g = Color.randomize();
+    this.b = Color.randomize();
+  }
+  static randomize(){ /* upgraded from func. specific to Color class */
+    return Math.floor(Math.random()*256);
+  }
+}
