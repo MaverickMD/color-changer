@@ -1,5 +1,6 @@
 const eRGB_DISPLAY = document.querySelector('#rgbDisplay');
 const eCOLOR_CHANGE_BTN = document.querySelector('#colorChangeBtn');
+const eBG = document.querySelector('#main');
 
 /*
 function randomNumber(){
@@ -43,4 +44,9 @@ class Color {
     return `rgb(${this.r},${this.g},${this.b})`
   }
 }
+eCOLOR_CHANGE_BTN.addEventListener('click', ()=>{
+const color = new Color();
+eBG.style.backgroundColor = color.rgbValue;
+})
+
 
