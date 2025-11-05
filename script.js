@@ -1,7 +1,7 @@
 const eRGB_DISPLAY = document.querySelector('#rgbDisplay');
 const eCOLOR_CHANGE_BTN = document.querySelector('#colorChangeBtn');
 
-
+/*
 function randomNumber(){
   return Math.floor(Math.random()*255)+1
 }
@@ -25,3 +25,7 @@ function updateDisplay(value){
 eCOLOR_CHANGE_BTN.addEventListener('click', ()=>{
   updateDisplay(changeBg())
 })
+
+*/
+
+/* Color = Class */
